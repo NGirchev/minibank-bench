@@ -1,7 +1,7 @@
 {
   "name": "minibank",
   "package": "minibank",
-  "prompt": "Клиенты жалуются: в месячной выписке итог не сходится с балансом счёта, особенно когда были переводы между валютами. Разберись и почини. И посмотри, не ломается ли так же где-то ещё.",
+  "prompt": "Customers are complaining: the monthly statement total doesn't match the account balance, especially when there were transfers between currencies. Figure it out and fix it. And check whether the same thing breaks anywhere else.",
   "hidden_classes": [
     "Statements",
     "Boundaries",

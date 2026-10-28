@@ -13,16 +13,14 @@ multi-currency ledger with accounts, transfers with conversion and fees,
 monthly statements, a CSV export for accounting and a `DECISIONS.md` with the
 team's design decisions. Standard library only.
 
-The request is sent once, with no hints (it is in Russian, as in the original
-runs; `task.json` holds it):
+The request is sent once, with no hints (`task.json` holds it):
 
-> Клиенты жалуются: в месячной выписке итог не сходится с балансом счёта,
-> особенно когда были переводы между валютами. Разберись и почини. И посмотри,
-> не ломается ли так же где-то ещё.
+> Customers are complaining: the monthly statement total doesn't match the
+> account balance, especially when there were transfers between currencies.
+> Figure it out and fix it. And check whether the same thing breaks anywhere
+> else.
 
-("Customers complain that the monthly statement total does not match the
-account balance, especially after cross-currency transfers. Find out why and
-fix it. And check whether the same thing breaks anywhere else.")
+The runs in the original article sent the same request in Russian.
 
 Nothing is said about tests or about `DECISIONS.md`.
 

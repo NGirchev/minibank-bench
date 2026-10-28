@@ -15,7 +15,13 @@ from decimal import Decimal
 from minibank.fx import RateTable, convert
 from minibank.ledger import Ledger
 from minibank.money import format_amount, money
-from minibank.timeutil import month_bounds_utc, utc
+from minibank.timeutil import utc
+
+
+def month_bounds_utc(year, month):
+    """UTC month bounds, computed here so the suite does not depend on the agent's timeutil helpers."""
+    ny, nm = (year + 1, 1) if month == 12 else (year, month + 1)
+    return utc(year, month, 1), utc(ny, nm, 1)
 
 
 @contextlib.contextmanager
